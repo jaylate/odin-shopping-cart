@@ -10,7 +10,9 @@ const Product = ({ product, addToCart }) => {
       <div>{product.description}</div>
       <p>{product.price}</p>
       <div>
+	<button onClick={() => setQuantity(quantity > 1 ? quantity-1 : 1) }>-</button>
 	<input type="number" value={quantity} min="1" onInput={(e) => setQuantity(Number(e.target.value)) } />
+	<button onClick={() => setQuantity(quantity+1) }>+</button>
 	<button onClick={() => addToCart(product, quantity)}>Add to cart</button>
       </div>
     </div>
