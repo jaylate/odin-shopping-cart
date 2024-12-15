@@ -2,4 +2,4 @@
 
 Shopping Cart project.
 
-Shop products taken from [[FakeStore API][https://fakestoreapi.com/]]
+Shop products taken from [FakeStore API](https://fakestoreapi.com/)

@@ -45,7 +45,7 @@ const Products = ({ addToCart }) => {
 
   return (
     <div className="products">
-      {productsList.map((product) => {
+      {productsList.slice(0, 9).map((product) => {
 	return <Product key={product.id} addToCart={addToCart} product={product} />
       })}
     </div>
